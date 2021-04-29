@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const Document = require("./Document");
+require("dotenv").config();
 
-mongoose.connect("mongodb://localhost/collaborative-docs", {
+mongoose.connect(process.env.MONGO_DB_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

@@ -1,2 +1,4 @@
 other.txt
 back-end/node_modules
+back-end/.env
+.DS_Store
